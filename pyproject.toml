@@ -1,0 +1,20 @@
+[project]
+name = "aerofleet_app"
+authors = [
+    { name = "aditya", email = "aditya.r@sarvadhi.com"}
+]
+description = "Aerofleet is a comprehensive flight management platform designed to streamline and enhance the operations of airlines, airports, and passengers. The app offers an end-to-end solution for managing flights, booking tickets, tracking airplanes, and providing a seamless travel experience. Built with scalability and user-friendliness in mind, Aerofleet is the ultimate tool for modern aviation."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"

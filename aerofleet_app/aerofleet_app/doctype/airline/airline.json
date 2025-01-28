@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "autoname": "format:{airline_name}",
+ "creation": "2025-01-28 12:09:01.571730",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "airline_name",
+  "headquater",
+  "customer_care_number",
+  "founding_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "founding_year",
+   "fieldtype": "Int",
+   "label": "Founding Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "customer_care_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Customer Care Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "headquater",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Headquater",
+   "reqd": 1
+  },
+  {
+   "fieldname": "airline_name",
+   "fieldtype": "Data",
+   "label": "AirLine Name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-28 16:39:44.202547",
+ "modified_by": "Administrator",
+ "module": "Aerofleet App",
+ "name": "Airline",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
